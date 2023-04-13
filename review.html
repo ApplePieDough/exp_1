@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="mobile_viewing.css">
+	<link rel="stylesheet" href="cards.css">
+	<link rel="stylesheet" href="styling.css">
+	<hr>
+    <h1>Leave a Review</h1>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="info.html">How To Play</a></li>
+          <li><a href="review.html">Review</a></li>
+          <li><a href="index.html" class="register">Register</a></li>
+		  <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <hr>
+	<title>Game Reviews</title>
+	
+</head>
+<body>
+	<div id="reviews"></div>
+	<script src="data.js"></script>
+	<script src="make_cards.js"></script>
+
+	<form>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name"><br><br>
+		<label for="review">Review:</label>
+		<textarea id="review" name="review"></textarea><br><br>
+		<label for="rating">Rating:</label>
+		<input type="range" id="rating" name="rating" min="0" max="5" step="1" value="0" list="rating-values">
+		<datalist id="rating-values">
+			<option value="0">
+			<option value="1">
+			<option value="2">
+			<option value="3">
+			<option value="4">
+			<option value="5">
+		</datalist><br><br>
+		<label for="date">Date:</label>
+		<input type="date" id="date" name="date" pattern="\d{4}-\d{2}-\d{2}"><br><br>
+		<button type="submit">Create</button>
+	</form>
+</body>
+  
+</html>
